@@ -1,0 +1,28 @@
+{
+  "name": "third-project",
+  "version": "1.0.0",
+  "description": "Third project",
+  "main": "index.js",
+  "scripts": {
+    "test": "third-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Daria Marczak",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-px-to-rem": "^0.4.0",
+    "grunt-sass": "^2.0.0",
+    "sass-rems": "^1.0.0"
+  }
+}

@@ -1,0 +1,416 @@
+@import "https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700,900";
+:root {
+  font-size: 16px; }
+
+body {
+  background-color: white;
+  font-family: 'Lato', sans-serif; }
+
+h2 {
+  font-weight: 300;
+  font-style: italic; }
+  h2:after {
+    display: block;
+    content: "";
+    border-top: 1px solid #ED145B;
+    width: 30%;
+    transform: translateY(15px);
+    padding-bottom: 20px; }
+
+/* HEADER */
+header {
+  background-image: url(https://i.imgur.com/tMsIPaG.png);
+  background-color: #F4F4F4;
+  min-height: 100vh;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  header .navbar-header {
+    padding-top: 2.5rem; }
+    header .navbar-header:after {
+      content: "";
+      display: table;
+      clear: both; }
+    header .navbar-header .icon-bar {
+      background-color: white;
+      color: white;
+      border: 1px solid white; }
+  header .my-navbar {
+    background-color: transparent;
+    border: 0px; }
+    header .my-navbar ul {
+      padding-top: 2.5rem; }
+      header .my-navbar ul li a {
+        color: white; }
+        header .my-navbar ul li a:hover {
+          color: #ED145B; }
+    header .my-navbar .navbar-collapse
+    a {
+      color: white;
+      min-width: 3.125rem;
+      display: block;
+      line-height: 3.125rem;
+      padding: 0 1.25rem;
+      font-weight: bold; }
+      header .my-navbar .navbar-collapse
+      a:hover {
+        color: #ED145B;
+        text-decoration: none; }
+  header .jumbotron {
+    text-align: center;
+    margin-top: 17rem;
+    background-color: transparent;
+    color: white; }
+    header .jumbotron .black {
+      font-weight: 900; }
+    header .jumbotron .display-3 {
+      font-weight: 100; }
+    header .jumbotron .my {
+      border: 1px solid #ED145B;
+      width: 30%; }
+    header .jumbotron .btn-pink {
+      background-color: #ED145B;
+      color: white;
+      border-radius: 25px;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      min-width: 150px;
+      transition: 0.6s ease-in-out; }
+      header .jumbotron .btn-pink:hover {
+        transform: scale(1.1); }
+
+/* SECTIONS */
+/* ABOUT SECTION */
+.about {
+  padding-top: 2.5rem;
+  background-color: #F4F4F4; }
+  .about .computer {
+    top: 6.25rem;
+    position: relative; }
+  .about a {
+    color: #ED145B;
+    text-decoration: none;
+    text-transform: uppercase; }
+
+/* SERVICSE SECTION */
+.services {
+  padding-bottom: 3.75rem;
+  text-align: center; }
+  .services h2 {
+    padding-top: 4rem; }
+    .services h2:after {
+      margin-left: 35%; }
+  .services p {
+    padding-bottom: 3.75rem; }
+  .services [class*="col-"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto; }
+    .services [class*="col-"] .circle {
+      width: 6.875rem;
+      height: 6.875rem;
+      border-radius: 50%;
+      border: 2px solid lightgrey;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .services h3 {
+    font-size: 1rem;
+    color: #ED145B;
+    text-transform: uppercase; }
+
+/* QUOTES SECTION */
+.quotes {
+  padding-top: 0;
+  padding-bottom: 0 !important; }
+  .quotes .carousel {
+    width: 100%; }
+  .quotes .carousel-caption {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 3.75rem;
+    color: white;
+    padding-bottom: 7rem; }
+
+/* PRICES SECTION */
+.prices {
+  padding-top: 2.5rem;
+  padding-bottom: 3.75rem;
+  background-color: #F4F4F4;
+  text-align: center; }
+  .prices h2 {
+    padding-top: 0; }
+    .prices h2:after {
+      margin-left: 35%; }
+  .prices p {
+    padding-bottom: 50px; }
+  .prices .price-box {
+    background-color: white;
+    position: relative;
+    padding-bottom: 20px; }
+    .prices .price-box .price-tag {
+      padding-top: 20px;
+      background-color: #5A5A5A;
+      color: white;
+      transition: 0.4s ease-in-out;
+      position: relative; }
+      .prices .price-box .price-tag h4, .prices .price-box .price-tag p {
+        font-weight: 700; }
+    .prices .price-box .account-type {
+      padding: 6px 12px;
+      line-height: 1.42857143;
+      vertical-align: middle;
+      border-radius: 25px;
+      width: 150px;
+      display: inline-block;
+      background-color: #F4F4F4;
+      color: black;
+      transition: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      position: absolute;
+      top: 30%;
+      left: 20%; }
+    .prices .price-box .info {
+      padding-top: 10px; }
+    .prices .price-box .list-group-item {
+      border: none; }
+    .prices .price-box .btn-pink {
+      background-color: #ED145B;
+      color: white;
+      border-radius: 25px;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      min-width: 150px;
+      transition: 0.6s ease-in-out; }
+      .prices .price-box .btn-pink:hover {
+        transform: scale(1.1); }
+    .prices .price-box:hover .price-tag {
+      background-color: #ED145B; }
+
+/* DESCRIPTION SECTION */
+.description {
+  padding-top: 2.5rem; }
+  .description h3 {
+    color: #ED145B;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    margin-top: 0; }
+  .description img {
+    width: 100%; }
+  .description [class*="col-"] {
+    padding-left: 0.5vw; }
+  .description .row {
+    padding-bottom: 0.5rem; }
+
+.community {
+  background-color: #ED145B;
+  margin-top: 10vh;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .community p {
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    display: inline-block;
+    text-transform: uppercase; }
+    .community p .black {
+      font-weight: 900; }
+  .community .btn-pink {
+    background-color: #ED145B;
+    color: white;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    min-width: 150px;
+    transition: 0.6s ease-in-out;
+    background-color: white;
+    color: #ED145B;
+    border: 1px solid transparent;
+    margin-top: 10%; }
+    .community .btn-pink:hover {
+      transform: scale(1.1); }
+
+.updates h2 {
+  text-align: center; }
+  .updates h2:after {
+    margin-left: 35%; }
+.updates p {
+  padding-bottom: 5vh; }
+.updates .row {
+  padding-bottom: 5vh; }
+.updates [class*="col-"] {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-left: 5px; }
+  .updates [class*="col-"] .image {
+    position: relative; }
+    .updates [class*="col-"] .image img {
+      width: 100%; }
+    .updates [class*="col-"] .image .layer {
+      background-image: linear-gradient(3deg, #ED145B 92%, transparent 92%);
+      background-position: 0 -44%;
+      background-size: 300%;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      transition: 0.6s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .updates [class*="col-"] .image .layer span {
+        display: none; }
+      .updates [class*="col-"] .image .layer:hover {
+        background-image: linear-gradient(3deg, rgba(237, 20, 91, 0.7) 100%, transparent 1%);
+        background-position: 0 10%;
+        color: white; }
+        .updates [class*="col-"] .image .layer:hover span {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .updates [class*="col-"] .image .layer:hover span i {
+            cursor: pointer; }
+  .updates [class*="col-"] .details {
+    background-color: #F4F4F4;
+    padding: 10px; }
+    .updates [class*="col-"] .details h5 {
+      text-transform: uppercase;
+      font-weight: bold; }
+.updates .more {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 5vh; }
+  .updates .more a {
+    color: #ED145B;
+    text-transform: uppercase;
+    text-decoration: none; }
+    .updates .more a i {
+      display: block; }
+
+/* MINI JUMBOTRON SECTION */
+.mini-jumbotron {
+  background-size: cover;
+  background: url(https://i.imgur.com/bwMLTUr.png);
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center; }
+  .mini-jumbotron h2 {
+    padding-top: 8%;
+    text-align: center; }
+    .mini-jumbotron h2:after {
+      margin-left: 35%; }
+  .mini-jumbotron .btn-pink {
+    background-color: #ED145B;
+    color: white;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    min-width: 150px;
+    transition: 0.6s ease-in-out; }
+    .mini-jumbotron .btn-pink:hover {
+      transform: scale(1.1); }
+
+/* SCREENSHOT */
+.screenshot {
+  padding-top: 2.5rem;
+  padding-bottom: 3.75rem; }
+  .screenshot img {
+    width: 100%;
+    box-shadow: 1px 1px 15px lightgrey; }
+  .screenshot .btn-pink {
+    background-color: #ED145B;
+    color: white;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    min-width: 150px;
+    transition: 0.6s ease-in-out; }
+    .screenshot .btn-pink:hover {
+      transform: scale(1.1); }
+
+/* FOOTER */
+footer {
+  background-color: #2B2B2B;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  color: white;
+  text-align: center; }
+  footer p {
+    text-transform: uppercase; }
+    footer p .black {
+      font-weight: 900; }
+
+/* MEDIA QUERIES */
+@media (min-width: 1921px) {
+  header {
+    background-position: top; } }
+@media (max-width: 1920px) {
+  header .jumbotron {
+    min-height: 100vh; } }
+@media (min-width: 1200px) and (max-width: 1920px) {
+  header-background-position: top; }
+/* QUOTES MEDIA */
+@media (max-width: 1660px) {
+  .quotes .carousel .carousel-caption {
+    line-height: 30px; } }
+@media (min-width: 1245px) and (max-width: 1520px) {
+  header {
+    padding-bottom: 0;
+    min-height: 50vh;
+    background-position: bottom; }
+
+  .about {
+    padding-top: 0;
+    padding-bottom: 5vh; }
+    .about .computer {
+      width: 100%; } }
+@media (max-width: 1244px) {
+  .about {
+    padding-bottom: 1rem; }
+    .about .computer {
+      display: none; }
+
+  .carousel .item {
+    min-height: 50vh; }
+    .carousel .item > img {
+      position: absolute;
+      min-height: 60vh;
+      width: auto;
+      top: 0;
+      left: 0; }
+    .carousel .item .carousel-caption {
+      font-size: 0.8rem;
+      padding-bottom: 2rem; }
+
+  .prices .price-box {
+    margin-bottom: 2rem; }
+    .prices .price-box h4 {
+      font-size: 2rem; }
+    .prices .price-box .account-type {
+      top: 32.5%;
+      left: 25%; }
+
+  .mini-jumbotron {
+    min-height: 50vh; }
+
+  .description {
+    padding-left: 1.5rem; }
+
+  .community .row {
+    text-align: center; }
+
+  .updates .image .layer span {
+    display: block; } }
+@media (max-width: 992px) {
+  .jumbotron {
+    padding-top: 25%; } }
