@@ -58,7 +58,7 @@ header {
   min-height: 100vh;
   background-color: $greyish;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: top;
   .navbar-header {
     @include padding-top;
     min-height: 3.125rem;

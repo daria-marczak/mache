@@ -29,7 +29,7 @@ header {
   min-height: 100vh;
   background-color: #f4f4f4;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: top;
 }
 
 header .navbar-header {
