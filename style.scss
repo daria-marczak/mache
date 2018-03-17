@@ -1,578 +1,571 @@
-@import "https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700,900";
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700,900");
 
-$pink: #ED145B;
-$greyish: #F4F4F4;
+$pink: #ed145b;
+$greyish: #f4f4f4;
 
 :root {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-    background-color: #FFFFFF;
-    font-family: 'Lato', sans-serif;
+  background-color: #ffffff;
+  font-family: "Lato", sans-serif;
 }
 
-@mixin padding-top () {
-    padding-top: 2.5rem;
+@mixin padding-top() {
+  padding-top: 2.5rem;
 }
 
 @mixin padding-bottom() {
-    padding-bottom: 3.75rem;
+  padding-bottom: 3.75rem;
 }
 
 h2 {
-	font-weight: 300;
-	font-style: italic;
-	&:after {
-		    display: block;
-		    content: "";
-		    border-top: 1px solid $pink;
-		    width: 30%;
-		    transform: translateY(15px);
-		    padding-bottom: 20px;
-		}
+  font-weight: 300;
+  font-style: italic;
+  &:after {
+    display: block;
+    content: "";
+    border-top: 1px solid $pink;
+    width: 30%;
+    transform: translateY(15px);
+    padding-bottom: 20px;
+  }
 }
 
 @mixin btn-pink {
-	background-color: $pink;
-	color: white;
-	border-radius: 25px;
-	text-transform: uppercase;
-	font-size: 0.75rem;
-	min-width: 150px;
-	transition: 0.6s ease-in-out;
-	&:hover {
-		transform: scale(1.1);
-	}
+  background-color: $pink;
+  color: white;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  min-width: 150px;
+  transition: 0.6s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 @mixin black {
-	font-weight: 900;
+  font-weight: 900;
 }
 
 /* HEADER */
 
 header {
-    background-size: cover;
-    background: url(https://i.imgur.com/tMsIPaG.png);
-    min-height: 100vh;
-    background-color: $greyish;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    .navbar-header {
-	    @include padding-top;
-		min-height: 3.125rem;
-		&:after {
-			content: "";
-			display: table;
-			clear:both;
-		}
+  background-size: cover;
+  background: url(https://i.imgur.com/tMsIPaG.png);
+  min-height: 100vh;
+  background-color: $greyish;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  .navbar-header {
+    @include padding-top;
+    min-height: 3.125rem;
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-		.icon-bar {
-			background-color: white;
-			color: white;
-			border: 1px solid white;
-		}
-	}
+    .icon-bar {
+      background-color: white;
+      color: white;
+      border: 1px solid white;
+    }
+  }
 
-	.my-navbar {
-		background-color: transparent;
-		border: 0px;
+  .my-navbar {
+    background-color: transparent;
+    border: 0px;
 
-		ul {
-			@include padding-top;
+    ul {
+      @include padding-top;
 
-			li a {
-				color: white;
-				&:hover {
-					color: $pink;
-				}
-			}
-		}
-		.navbar-collapse
-			a {
-				color: white;
-				min-width: 3.125rem;
-				display: block;
-				line-height: 3.125rem;
-				padding: 0 1.25rem;
-				font-weight: bold;
-				&:hover {
-					color: $pink;
-					text-decoration: none;
-				}
-			}
+      li a {
+        color: white;
+        &:hover {
+          color: $pink;
+        }
+      }
+    }
+    .navbar-collapse a {
+      color: white;
+      min-width: 3.125rem;
+      display: block;
+      line-height: 3.125rem;
+      padding: 0 1.25rem;
+      font-weight: bold;
+      &:hover {
+        color: $pink;
+        text-decoration: none;
+      }
+    }
+  }
 
-		}
+  .jumbotron {
+    text-align: center;
+    top: 7rem;
+    background-color: transparent;
+    color: white;
 
-	.jumbotron {
-		text-align: center;
-	    top: 7rem;
-	    background-color: transparent;
-	    color: white;
+    .black {
+      @include black;
+    }
 
-		.black {
-		    @include black;
-		}
+    .display-3 {
+      font-weight: 100;
+    }
 
-	    .display-3 {
-	    	font-weight: 100;
-	    }
+    .my {
+      border: 1px solid $pink;
+      width: 30%;
+    }
 
-	    .my {
-	    	border: 1px solid $pink;
-	    	width: 30%;
-	    }
-
-	    .btn-pink {
-	    	@include btn-pink;
-	    }
-	}
+    .btn-pink {
+      @include btn-pink;
+    }
+  }
 }
-
 
 /* SECTIONS */
 
-
-
 /* ABOUT SECTION */
 .about {
-    @include padding-top;
-    background-color: $greyish;
-    .computer {
-	    top: 6.25rem;
-	    position: relative;
-    }
+  @include padding-top;
+  background-color: $greyish;
+  .computer {
+    top: 6.25rem;
+    position: relative;
+  }
 
-    a {
-    	color: $pink;
-    	text-decoration: none;
-    	text-transform: uppercase;
-    }
+  a {
+    color: $pink;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 }
-
 
 /* SERVICSE SECTION */
 .services {
-	padding-bottom: 3.75rem;
-	h2 {
-		padding-top: 4rem;
-		&:after {
-		    margin-left: 35%;
-		}
-	}
-	p {
-		padding-bottom: 3.75rem;
-	}
-	text-align: center;
-	[class*="col-"] {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		margin: 0 auto;
-		.circle {
-			width:  6.875rem;
-			height:  6.875rem;
-			border-radius: 50%;
-			border: 2px solid lightgrey;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-	}
-	h3 {
-		font-size: 1rem;
-		color: $pink;
-		text-transform: uppercase;
-	}
+  padding-bottom: 3.75rem;
+  h2 {
+    padding-top: 4rem;
+    &:after {
+      margin-left: 35%;
+    }
+  }
+  p {
+    padding-bottom: 3.75rem;
+  }
+  text-align: center;
+  [class*="col-"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    .circle {
+      width: 6.875rem;
+      height: 6.875rem;
+      border-radius: 50%;
+      border: 2px solid lightgrey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  h3 {
+    font-size: 1rem;
+    color: $pink;
+    text-transform: uppercase;
+  }
 }
-
-
 
 /* QUOTES SECTION */
 
 .quotes {
-	padding-top: 0;
-	padding-bottom: 0 !important;
+  padding-top: 0;
+  padding-bottom: 0 !important;
 
-    .carousel {
-    	width: 100%;
-    }
+  .carousel {
+    width: 100%;
+  }
 
-    .carousel-caption {
-    	font-size: 1.5rem;
-    	font-style: italic;
-    	font-weight: 300;
-    	line-height: 3.75rem;
-    	color: white;
-    	padding-bottom: 7rem;
+  #myCarousel .carousel-inner .item {
+    background: url("https://i.imgur.com/bwMLTUr.png");
+    background-size: cover;
 
-    }
+  }
 
-
+  .carousel-caption {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 3.75rem;
+    color: white;
+    padding-bottom: 7rem;
+  }
 }
-
-
 
 /* PRICES SECTION */
 
 .prices {
-    @include padding-top;
-    @include padding-bottom;
-	background-color: $greyish;
-	text-align: center;
-	h2 {
-		padding-top: 0;
-		&:after {
-		    margin-left: 35%;
-		}
-	}
-	p {
-		padding-bottom: 50px;
-	}
-	.price-box {
-		background-color: white;
-		position: relative;
+  @include padding-top;
+  @include padding-bottom;
+  background-color: $greyish;
+  text-align: center;
+  h2 {
+    padding-top: 0;
+    &:after {
+      margin-left: 35%;
+    }
+  }
+  p {
+    padding-bottom: 50px;
+  }
+  .price-box {
+    background-color: white;
+    position: relative;
+    margin-bottom: 1rem;
+    .price-tag {
+      padding-top: 20px;
+      background-color: #5a5a5a;
+      color: white;
+      transition: 0.4s ease-in-out;
+      position: relative;
+      h4,
+      p {
+        font-weight: 700;
+      }
+    }
 
-		.price-tag {
-			padding-top: 20px;
-			background-color: #5A5A5A;
-			color: white;
-			transition: 0.4s ease-in-out;
-			position: relative;
-			h4,p {
-				font-weight: 700;
-			}
-		}
+    .account-type {
+      padding: 6px 12px;
+      line-height: 1.42857143;
+      vertical-align: middle;
+      border-radius: 25px;
+      width: 150px;
+      display: inline-block;
+      background-color: $greyish;
+      color: black;
+      transition: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -70%);
+    }
+    .info {
+      padding-top: 10px;
+    }
+    .list-group-item {
+      border: none;
+    }
+    .btn-pink {
+      @include btn-pink;
+    }
+    padding-bottom: 20px;
 
-		.account-type {
-			padding: 6px 12px;
-			line-height: 1.42857143;
-			vertical-align: middle;
-			border-radius: 25px;
-			width: 150px;
-			display: inline-block;
-			background-color: $greyish;
-			color: black;
-			transition: none;
-			text-transform: uppercase;
-			font-weight: bold;
-			position: absolute;
-			top: 30%;
-			left: 20%;
-		}
-		.info {
-			padding-top: 10px;
-		}
-		.list-group-item {
-			border: none;
-		}
-		.btn-pink {
-			@include btn-pink;
-		}
-		padding-bottom: 20px;
-
-		&:hover .price-tag {
-			background-color: $pink;
-		}
-	}
+    &:hover .price-tag {
+      background-color: $pink;
+    }
+  }
 }
 
 /* DESCRIPTION SECTION */
 
 .description {
-    @include padding-top;
-	h3 {
-		color: $pink;
-		text-transform: uppercase;
-		padding-bottom: 0.5rem;
-		margin-top: 0;
-	}
-	img {
-		width: 100%
-	}
-	[class *="col-"] {
-		padding-left: 0.5vw;
-	}
-    .row {
-        padding-bottom: 0.5rem;
-    }
+  @include padding-top;
+  h3 {
+    color: $pink;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  img {
+    width: 100%;
+  }
+  [class*="col-"] {
+    padding-left: 0.5vw;
+  }
+  .row {
+    padding-bottom: 0.5rem;
+  }
 }
 
 .community {
-	background-color: $pink;
-	margin-top: 10vh;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	p {
-		color: white;
-		font-size: 40px;
-		font-weight: 300;
-		display: inline-block;
-		text-transform: uppercase;
-		.black {
-			@include black;
-		}
-	}
+  background-color: $pink;
+  margin-top: 10vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    display: inline-block;
+    text-transform: uppercase;
+    .black {
+      @include black;
+    }
+  }
 
-	.btn-pink {
-		@include btn-pink;
-		background-color: white;
-		color: $pink;
-		border: 1px solid transparent;
-		margin-top: 10%;
-	}
+  .btn-pink {
+    @include btn-pink;
+    background-color: white;
+    color: $pink;
+    border: 1px solid transparent;
+    margin-top: 10%;
+  }
 }
-
 
 .updates {
-	h2 {
-		text-align: center;
-		&:after {
-		    margin-left: 35%;
-		}
-	}
-	p {
-		padding-bottom: 5vh;
-	}
+  h2 {
+    text-align: center;
+    &:after {
+      margin-left: 35%;
+    }
+  }
+  p {
+    padding-bottom: 5vh;
+  }
 
-	.row {
-		padding-bottom: 5vh;
-	}
+  .row {
+    padding-bottom: 5vh;
+  }
 
-	[class*="col-"] {
-		position: relative;
-		padding: 0;
-		margin: 0;
-		padding-left: 5px;
+  [class*="col-"] {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-left: 5px;
 
+    .image {
+      position: relative;
+      img {
+        width: 100%;
+      }
+      .layer {
+        background-image: linear-gradient(3deg, $pink 92%, transparent 92%);
+        background-position: 0 -44%;
+        background-size: 300%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.6s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          display: none;
+        }
+        &:hover {
+          background-image: linear-gradient(
+            3deg,
+            rgba(237, 20, 91, 0.7) 100%,
+            transparent 1%
+          );
+          background-position: 0 10%;
+          color: white;
+          span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-		.image {
-            position: relative;
-			img {
-				width: 100%;
-			}
-			.layer {
-                background-image: linear-gradient(3deg, $pink 92%, transparent 92%);
-                background-position: 0 -44%;
-                background-size: 300%;
-                background-repeat: no-repeat;
-				position: absolute;
-                top: 0;
-                width: 100%;
-                height: 100%;
-				transition: 0.6s ease-in-out;
-				display: flex;
-						justify-content: center;
-						align-items: center;
-                span {
-                	display: none;
-                }
-                &:hover {
-                    background-image: linear-gradient(3deg, rgba(237, 20, 91, 0.7) 100%, transparent 1%);
-					background-position: 0 10%;
-                    color: white;
-                    span {
-                    	display: flex;
-						justify-content: center;
-						align-items: center;
+            i {
+              align-self: center;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .details {
+      background-color: $greyish;
+      padding: 10px;
+      h5 {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
 
-                    	i {
-							align-self: center;
-							cursor: pointer;
-                    	}
-                    }
-				}
-			}
-		}
-		.details {
-			background-color: $greyish;
-			padding: 10px;
-			h5 {
-				text-transform: uppercase;
-				font-weight: bold;
-			}
-		}
-	}
-
-	.more {
-		text-align: center;
-		margin: 0 auto;
-		padding-bottom: 5vh;
-		a {
-			color: $pink;
-			text-transform: uppercase;
-			text-decoration: none;
-			i {
-				display: block;
-			}
-		}
-	}
+  .more {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 5vh;
+    a {
+      color: $pink;
+      text-transform: uppercase;
+      text-decoration: none;
+      i {
+        display: block;
+      }
+    }
+  }
 }
-
-
 
 /* MINI JUMBOTRON SECTION */
 
 .mini-jumbotron {
-	h2 {
-        padding-top: 8%;
-		text-align: center;
-		&:after {
-		    margin-left: 35%;
-		}
-	}
-    background-size: cover;
-    background: url(https://i.imgur.com/bwMLTUr.png);
-    min-height: 50vh;
-    background-repeat: no-repeat;
-    color: white;
+  h2 {
+    padding-top: 8%;
     text-align: center;
-    .btn-pink {
-		@include btn-pink;
-	}
+    &:after {
+      margin-left: 35%;
+    }
+  }
+  background-size: cover;
+  background: url(https://i.imgur.com/bwMLTUr.png);
+  min-height: 60vh;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  .btn-pink {
+    @include btn-pink;
+  }
 }
 
 /* SCREENSHOT */
 .screenshot {
-	@include padding-top;
-    @include padding-bottom;
-	img {
-		width: 100%;
-		box-shadow: 1px 1px 15px lightgrey;
-	}
-	.btn-pink {
-		@include btn-pink;
-	}
+  @include padding-top;
+  @include padding-bottom;
+  img {
+    width: 100%;
+    box-shadow: 1px 1px 15px lightgrey;
+  }
+  .btn-pink {
+    @include btn-pink;
+  }
 }
 
 /* FOOTER */
 footer {
-	background-color: #2B2B2B;
-	padding-top: 3vh;
-	padding-bottom: 3vh;
-	color: white;
-	text-align: center;
-	p {
-		text-transform: uppercase;
-		.black {
-		 	@include black;
-		}
-	}
+  background-color: #2b2b2b;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  color: white;
+  text-align: center;
+  p {
+    text-transform: uppercase;
+    .black {
+      @include black;
+    }
+  }
 }
-
 
 /* MEDIA QUERIES */
 
-
 @media (min-width: 1200px) and (max-width: 1660px) {
-	header {
-		padding-bottom: 0;
-		min-height: 50vh;
-		background-position: bottom;
-	}
-	.about {
-		padding-top: 0;
-		padding-bottom: 5vh;
-		.computer {
-			width: 100%;
-		}
-	}
-    #myCarousel {
-        min-height: 50vh;
+  header {
+    padding-bottom: 0;
+    min-height: 50vh;
+    background-position: bottom;
+  }
+  .about {
+    padding-top: 0;
+    padding-bottom: 5vh;
+    .computer {
+      width: 100%;
     }
-    .quotes {
-        min-heigth: 50vh;
-        .carousel .carousel-caption {
-            line-height: 30px;
-            font-size: 1.2rem;
-            padding-bottom: 4rem;
-        }
+  }
+  #myCarousel {
+    min-height: 70vh;
+  }
+  .quotes {
+    min-height: 70vh;
+    .carousel .carousel-caption {
+      
+      line-height: 30px;
+      font-size: 1.2rem;
+      padding-bottom: 4rem;
     }
+  }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
-	.about {
-		padding-bottom: 1rem;
-		.computer {
-			display: none;
-		}
-	}
+  .about {
+    padding-bottom: 1rem;
+    .computer {
+      display: none;
+    }
+  }
 
-	.carousel .item {
-		min-height: 50vh;
-		> img {
-			position: absolute;
-			min-height: 60vh;
-			width: auto;
-			top: 0;
-			left: 0;
-		}
-		.carousel-caption {
-			font-size: 1rem;
-            line-height: 1.3rem;
-			padding-bottom: 2rem;
-		}
-	}
+  .carousel .item {
+    min-height: 50vh;
+    > img {
+      position: absolute;
+      min-height: 60vh;
+      width: auto;
+      top: 0;
+      left: 0;
+    }
+    .carousel-caption {
+      font-size: 1rem;
+      line-height: 1.3rem;
+      padding-bottom: 2rem;
+    }
+  }
 
-	.prices .price-box {
-		margin-bottom: 2rem;
-		h4 {
-			font-size: 2rem;
-		}
-		.account-type {
-			top: 32.5%;
-			left: 25%;
-		}
-	}
+  .prices .price-box {
+    margin-bottom: 2rem;
+    h4 {
+      font-size: 2rem;
+    }
+    .account-type {
+      top: 32.5%;
+      left: 25%;
+    }
+  }
 
-	.mini-jumbotron {
-		min-height: 50vh;
-	}
+  .mini-jumbotron {
+    min-height: 50vh;
+  }
 
-	.description {
-		padding-left: 1.5rem;
-	}
+  .description {
+    padding-left: 1.5rem;
+  }
 
-	.community .row {
-		text-align: center;
-	}
+  .community .row {
+    text-align: center;
+  }
 
-	.updates .image .layer span {
-		display: block;
-	}
-
+  .updates .image .layer span {
+    display: block;
+  }
 }
 
 @media (max-width: 992px) {
-	.jumbotron {
-		padding-top: 25%;
-	}
-    .about {
-        padding-bottom: 1rem;
-        img {
-           display: none;
-       }
+  .jumbotron {
+    padding-top: 25%;
+  }
+  .about {
+    padding-bottom: 1rem;
+    img {
+      display: none;
     }
-    #myCarousel .carousel-caption {
-        font-size: 1rem;
-        padding-bottom: 2rem;
-        line-height: 1.3rem;
-    }
+  }
+  #myCarousel .carousel-caption {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+    line-height: 1.3rem;
+  }
 }
 
 @media (max-width: 768px) {
-    #myCarousel .carousel-inner .item {
-        img {
-            height: auto;
-        }
-        min-height: 50vh;
+  #myCarousel .carousel-inner .item {
+    
+    .carousel-caption img {
+      width: 10%;
     }
-    .prices .price-box .account-type {
-        left: 35%;
-    }
-}
-/* doit ressembler a ca https://imgur.com/12x6tO3 */
+    min-height: 70vh;
+  }
 
-/* small line https://i.imgur.com/rxAbFri.png */
+  .description .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
